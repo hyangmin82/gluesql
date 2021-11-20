@@ -16,7 +16,7 @@ test_case!(limit, async move {
         ),
         (
             "SELECT * FROM Test LIMIT 10;",
-            select!(id; I64; 1; 2; 3; 4; 5; 6; 7; 10),
+            select!(id; I64; 1; 2; 3; 4; 5; 6; 7; 11),
         ),
         (
             "SELECT * FROM Test LIMIT 10 OFFSET 1;",
